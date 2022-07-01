@@ -34,6 +34,8 @@ const rockPaperScissors = (hand1, hand2) => {
     (userOne === 'scissor' && userTwo === 'rock')
   ) {
     return 'Hand two wins!';
+  } else {
+    getPrompt();
   }
 };
 
