@@ -75,7 +75,7 @@ main {
   border-radius: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10% 10% 20% 25% 10% 20% 5%;
+  grid-template-rows: 10% 10% 20% 20% 10% 20% 10%;
 }
 .score {
   grid-column: span 3;
@@ -159,6 +159,11 @@ main {
 
 .play-button {
   grid-column: span 3;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .player-wins {
@@ -177,4 +182,34 @@ main {
 /* # Functional classes */
 .hidden {
   display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 54px;
+  }
+
+  button {
+    font-size: 1.4em;
+  }
+  .player1 {
+    width: 30%;
+    font-size: 24px;
+  }
+
+  .player2 {
+    width: 30%;
+    font-size: 24px;
+  }
+
+  .player-select {
+    font-size: 32px;
+  }
+
+  .play-button {
+    font-size: 28px;
+    padding: 0.5em;
+    height: 2em;
+  }
 }
