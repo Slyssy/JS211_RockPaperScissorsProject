@@ -11,37 +11,63 @@
       <h1>Rock, Paper Scissors</h1>
       <button class="lets-play">Let's Play</button>
     </header>
-    <main>
+    <main class="hidden">
       <div class="score">
         <div class="player1">
           <p class="player">Player 1:</p>
-          <p class="player-score">0</p>
+          <p id="player-1-score" class="player-score">0</p>
         </div>
         <div class="player2">
           <p class="player">Player 2:</p>
-          <p class="player-score">0</p>
+          <p id="player-2-score" class="player-score">0</p>
         </div>
       </div>
       <h2 class="player-select">Player 1 Select</h2>
       <div class="img-container">
-        <img src="./images/stone.png" alt="Rock Icon" class="rock" />
+        <img
+          src="./images/stone.png"
+          alt="Rock Icon"
+          class="rock player-1-choice"
+        />
       </div>
       <div class="img-container">
-        <img src="./images/paper.png" alt="Paper Icon" class="paper" />
+        <img
+          src="./images/paper.png"
+          alt="Paper Icon"
+          class="paper player-1-choice"
+        />
       </div>
       <div class="img-container">
-        <img src="./images/scissors.png" alt="Scissors Icon" class="scissors" />
+        <img
+          src="./images/scissors.png"
+          alt="Scissors Icon"
+          class="scissors player-1-choice"
+        />
       </div>
+      <div class="display-winner"></div>
       <h2 class="player-select player-2-select">Player 2 Select</h2>
       <div class="img-container player-2-rock">
-        <img src="./images/stone.png" alt="Rock Icon" class="rock" />
+        <img
+          src="./images/stone.png"
+          alt="Rock Icon"
+          class="rock player-2-choice"
+        />
       </div>
       <div class="img-container player-2-paper">
-        <img src="./images/paper.png" alt="Paper Icon" class="paper" />
+        <img
+          src="./images/paper.png"
+          alt="Paper Icon"
+          class="paper player-2-choice"
+        />
       </div>
       <div class="img-container player-2-scissors">
-        <img src="./images/scissors.png" alt="Scissors Icon" class="scissors" />
+        <img
+          src="./images/scissors.png"
+          alt="Scissors Icon"
+          class="scissors player-2-choice"
+        />
       </div>
+      <button onclick="rockPaperScissors()" class="play-button">Play</button>
     </main>
   </body>
 </html>

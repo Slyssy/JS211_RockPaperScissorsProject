@@ -33,7 +33,7 @@ body {
 
 header {
   width: 100%;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2em;
@@ -49,15 +49,25 @@ button {
   font-family: 'Shadows Into Light', cursive;
   font-size: 1.1em;
   color: white;
-  padding: 1em;
+  padding: 0.25em;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
 }
 
 /*# Game Board Styling */
 main {
   width: 90%;
+  max-width: 700px;
   height: 90vh;
   margin: 0 auto;
   padding: 1em;
@@ -65,7 +75,7 @@ main {
   border-radius: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10% 10% 20% 30% 10% 20%;
+  grid-template-rows: 10% 10% 20% 25% 10% 20% 5%;
 }
 .score {
   grid-column: span 3;
@@ -111,10 +121,23 @@ main {
 
 .img-container {
   width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
 }
 
 .img-container img {
   width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.img-container img:hover {
+  transform: scale(1.05);
+}
+
+.img-container img:active {
+  transform: scale(1);
 }
 
 .player-2-rock {
@@ -125,4 +148,33 @@ main {
 }
 .player-2-scissors {
   grid-row: 6;
+}
+
+.display-winner {
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button {
+  grid-column: span 3;
+}
+
+.player-wins {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.player-wins p {
+  color: var(--cinnamon-satin);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+/* # Functional classes */
+.hidden {
+  display: none;
 }
