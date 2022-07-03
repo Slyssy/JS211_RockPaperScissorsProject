@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script src="main.js"></script>
+    <meta charset="utf-8" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
-    <hr/>
+    <header>
+      <h1>Rock, Paper Scissors</h1>
+      <button class="lets-play">Let's Play</button>
+    </header>
+    <main>
+      <div class="score">
+        <div class="player1">
+          <p class="player">Player 1:</p>
+          <p class="player-score">0</p>
+        </div>
+        <div class="player2">
+          <p class="player">Player 2:</p>
+          <p class="player-score">0</p>
+        </div>
+      </div>
+      <h2 class="player-select">Player 1 Select</h2>
+      <div class="img-container">
+        <img src="./images/stone.png" alt="Rock Icon" class="rock" />
+      </div>
+      <div class="img-container">
+        <img src="./images/paper.png" alt="Paper Icon" class="paper" />
+      </div>
+      <div class="img-container">
+        <img src="./images/scissors.png" alt="Scissors Icon" class="scissors" />
+      </div>
+      <h2 class="player-select player-2-select">Player 2 Select</h2>
+      <div class="img-container player-2-rock">
+        <img src="./images/stone.png" alt="Rock Icon" class="rock" />
+      </div>
+      <div class="img-container player-2-paper">
+        <img src="./images/paper.png" alt="Paper Icon" class="paper" />
+      </div>
+      <div class="img-container player-2-scissors">
+        <img src="./images/scissors.png" alt="Scissors Icon" class="scissors" />
+      </div>
+    </main>
   </body>
 </html>

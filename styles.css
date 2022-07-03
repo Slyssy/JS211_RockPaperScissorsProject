@@ -1,0 +1,128 @@
+/*# Color Pallette */
+:root {
+  --y-in-mn-blue: #355070ff;
+  --chinese-violet: #6d597aff;
+  --cinnamon-satin: #b56576ff;
+  --candy-pink: #e56b6fff;
+  --tumbleweed: #eaac8bff;
+}
+
+/*# Font Section */
+@font-face {
+  font-family: 'Shadows Into Light';
+  src: url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+}
+
+/*# Page Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Shadows Into Light', cursive;
+  background-color: var(--chinese-violet);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+header {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+h1 {
+  font-size: 34px;
+  color: white;
+}
+
+button {
+  background-color: var(--candy-pink);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.1em;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+/*# Game Board Styling */
+main {
+  width: 90%;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: var(--tumbleweed);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 10% 20% 30% 10% 20%;
+}
+.score {
+  grid-column: span 3;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player1 {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.player2 {
+  text-align: right;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.player {
+  width: 70%;
+  color: var(--y-in-mn-blue);
+}
+
+.player-score {
+  width: 30%;
+  color: var(--cinnamon-satin);
+}
+
+.player-select {
+  grid-column: span 3;
+  font-size: 22px;
+  color: var(--y-in-mn-blue);
+  text-align: center;
+}
+
+.player-2-select {
+  grid-row: 5;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.player-2-rock {
+  grid-row: 6;
+}
+.player-2-paper {
+  grid-row: 6;
+}
+.player-2-scissors {
+  grid-row: 6;
+}
